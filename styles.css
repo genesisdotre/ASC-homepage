@@ -1,7 +1,20 @@
 body { 
-    background: url('background.jpg') no-repeat center center fixed;
+  background: url('background.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+
+
+input {
+  padding: 10px;
+  border: solid 5px #c9c9c9;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  -webkit-transition: border 0.3s;
+  -moz-transition: border 0.3s;
+  -o-transition: border 0.3s;
+  transition: border 0.3s;
 }
