@@ -22,14 +22,23 @@ function onYouTubeIframeAPIReady() {
     events: {
       onReady: function(e) {
         e.target.mute();
+      },
+      onStateChange: function(e) {
+        console.log(e);
+        if(e.data === YT.PlayerState.ENDED) {
+
+        }
       }
     }
   });
  }
 
-// Detecting when YouTube video finished playing: http://stackoverflow.com/questions/7853904/how-to-detect-when-a-youtube-video-finishes-playing
-function onPlayerStateChange(event) {
-  if(event.data === 0) {
-      alert('done');
-  }
+function formSubmit(event) {
+  event.preventDefault();
+
+  setTimeout(function() {
+    window.location = "http://asc.ai/info";
+  }, 1000);
+
+  return false;
 }

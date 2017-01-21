@@ -6,8 +6,6 @@ body {
   background-size: cover;
 }
 
-
-
 input {
   padding: 10px;
   border: solid 5px #c9c9c9;
@@ -17,4 +15,9 @@ input {
   -moz-transition: border 0.3s;
   -o-transition: border 0.3s;
   transition: border 0.3s;
+}
+
+input[type=submit] {
+  background: white;
+  color: #c9c9c9;
 }
