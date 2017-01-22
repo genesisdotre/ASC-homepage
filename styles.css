@@ -4,13 +4,15 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+  font-family: "Open Sans", sans-serif;
 }
 
 input {
   padding: 10px;
   border: solid 5px #c9c9c9;
-  font-family: "Open Sans", sans-serif;
   font-size: 18px;
+  color: #3a3a3a;
   -webkit-transition: border 0.3s;
   -moz-transition: border 0.3s;
   -o-transition: border 0.3s;
@@ -19,5 +21,10 @@ input {
 
 input[type=submit] {
   background: white;
-  color: #c9c9c9;
+}
+
+.skip {
+  color: #3a3a3a;
+  text-decoration: none;
+  font-size: 0.8em;
 }
